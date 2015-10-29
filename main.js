@@ -26,9 +26,7 @@ animSequence = {
 }
 
 function $wordEndChange(word,$targetSelector){
-  console.log('butpr');
    $targetSelector.html(word.endings[animSequence.seqNumb]);
-  //  $('.targ').html(word.endings[animSequence.seqNumb]);
   if(animSequence > 0){animSequence = 0}
 }
 
@@ -54,6 +52,5 @@ function SpanWord(initial, endings){
 
   }
 
-console.log(comer.endings);
 
 });
