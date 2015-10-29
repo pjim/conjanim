@@ -27,7 +27,7 @@ animSequence = {
 
 function $wordEndChange(word,$targetSelector){
    $targetSelector.html(word.endings[animSequence.seqNumb]);
-  if(animSequence > 0){animSequence = 0}
+  if(animSequence.seqNumb < 0){animSequence.seqNumb = 0}
 }
 
 
