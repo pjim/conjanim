@@ -5,16 +5,16 @@ $(document).ready(function(){
     animSequence.seqNumb += 1;
     $wordEndChange(hablar, $('.second'));
 
-    $('.second').addClass('animated bounce').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    $('.second').addClass('animated bounceInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 
-      $('this').removeClass('animated bounce');
+      $('.second').removeClass('animated bounceInDown');
     });
   }else if(e.keyCode == 38){
     animSequence.seqNumb -= 1;
     $wordEndChange(hablar,$('.second'));
     $('.second').addClass('animated bounce').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 
-      $('this').removeClass('animated bounce');
+      $('.second').removeClass('animated bounce');
     });
   }
   console.log(animSequence.seqNumb);
